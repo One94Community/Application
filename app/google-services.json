@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "980974165325",
+    "firebase_url": "https://ing-application-27-8-20.firebaseio.com",
+    "project_id": "ing-application-27-8-20",
+    "storage_bucket": "ing-application-27-8-20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980974165325:android:489f3002e66bd6a2d2eb04",
+        "android_client_info": {
+          "package_name": "com.ingteamsofindia.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980974165325-fuk0u1d8bicoj5mbj53kk2h3j9jltfg0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN6zEdV4pU45y_EJcuGHQH8Tx3ePkQKjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980974165325-fuk0u1d8bicoj5mbj53kk2h3j9jltfg0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

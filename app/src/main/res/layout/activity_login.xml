@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorProgressBG"
+    tools:context=".Activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:foregroundGravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/_5sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <EditText
+                        android:id="@+id/etLoginEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@null"
+                        android:drawableStart="@drawable/ic_email"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:ems="10"
+                        android:hint="@string/input_enter_email"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_10sdp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp">
+
+                    <EditText
+                        android:id="@+id/etLoginPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@null"
+                        android:drawableStart="@drawable/ic_password"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:ems="10"
+                        android:hint="@string/input_enter_password"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/_10sdp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/mLoginButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@color/colorPrimary"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/btn_login"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/mRegistrationActivityGo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@color/colorCreateNewAccount"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/create_new_account"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mLoginProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorProgressBG"
+            android:padding="@dimen/_85sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/please_wait"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:textColor="@color/colorWhite"
+        android:gravity="bottom"
+        android:text="@string/pandora_box_all_rights_reserved" />
+
+</RelativeLayout>
